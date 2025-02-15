@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Product implements SuperEntity{
     private String productId;
     private String productName;
-    private String productUnitPrice;
+    private Double productUnitPrice;
     private int productQty;
     private byte[] productQr;
     private byte[] productImg;
@@ -13,7 +13,7 @@ public class Product implements SuperEntity{
     public Product() {
     }
 
-    public Product(String productId, String productName, String productUnitPrice, int productQty, byte[] productQr, byte[] productImg) {
+    public Product(String productId, String productName, Double productUnitPrice, int productQty, byte[] productQr, byte[] productImg) {
         this.productId = productId;
         this.productName = productName;
         this.productUnitPrice = productUnitPrice;
@@ -38,11 +38,11 @@ public class Product implements SuperEntity{
         this.productName = productName;
     }
 
-    public String getProductUnitPrice() {
+    public Double getProductUnitPrice() {
         return productUnitPrice;
     }
 
-    public void setProductUnitPrice(String productUnitPrice) {
+    public void setProductUnitPrice(Double productUnitPrice) {
         this.productUnitPrice = productUnitPrice;
     }
 
